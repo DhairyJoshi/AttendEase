@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AttendEase</string>
+    <string name="banner1">Welcome to AttendEase!</string>
+    <string name="login_text">Login</string>
+    <string name="signup_text">Sign Up</string>
+    <string name="about_us_text">Creator: Dhairy Joshi</string>
+    <string name="s1">Name</string>
+    <string name="s2">Username</string>
+    <string name="s3">Email Address</string>
+    <string name="s4">Password</string>
+    <string name="s5">Confirm Password</string>
+    <string name="s6">attendance_list</string>
+    <string name="s7">Attendance</string>
+    <string name="s8">Add Student</string>
+    <string name="s9">Add Class</string>
+    <string name="s10">View</string>
+    <string name="s11">Add Class</string>
+    <string name="s12">Class Name</string>
+    <string name="s13">Class Size</string>
+    <string name="string_add">Add</string>
+    <string name="s14">Select Class and Date</string>
+    <string name="s15">spinner item</string>
+    <string name="s16">Date</string>
+    <string name="s17">Submit</string>
+    <string name="s18">Remove Class</string>
+    <string name="s19">Delete Student</string>
+    <string name="s20">Select Class To Remove</string>
+    <string name="s21">Select Class To Add Student</string>
+    <string name="s22">No. of Students</string>
+    <string name="s23">Select Class To Remove Student</string>
+    <string name="s24">Present</string>
+</resources>

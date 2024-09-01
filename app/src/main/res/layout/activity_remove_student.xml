@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".removeStudent"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dummy"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s23"
+        android:textSize="40sp"
+        android:textColor="@color/blue1"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/selectedClass"
+        android:layout_marginBottom="20dp"/>
+
+    <Spinner
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:id="@+id/selectedClass"
+        android:layout_above="@id/dummy"
+        android:background="@drawable/spinner_outline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        tools:listitem="@layout/custom_spinner_item" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:minWidth="300dp"
+        android:maxWidth="300dp"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:maxHeight="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/selectedClass"
+        android:id="@+id/studentsSize"
+        android:layout_gravity="center"
+        android:background="@drawable/edittext"
+        android:hint="@string/s22"
+        android:textColorHint="@color/blue1"
+        android:textSize="30sp"
+        android:textColor="@color/blue1"
+        android:inputType="number"
+        android:autofillHints="size"
+        android:paddingHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/studentsSize"
+        android:backgroundTint="@color/blue1"
+        android:minWidth="100dp"
+        android:minHeight="65dp"
+        android:text="@string/s17"
+        android:textColor="@color/cream1"
+        android:textSize="30sp"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/cream1"
+        app:strokeWidth="2dp"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:onClick="Submit" />
+
+</RelativeLayout>

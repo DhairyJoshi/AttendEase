@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".teacherHome"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dummy1"
+        android:layout_centerInParent="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_above="@id/addClass"
+        android:layout_alignEnd="@id/dummy1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/blue1"
+        android:clickable="true"
+        android:onClick="attendanceClicked"
+        app:cardCornerRadius="10dp"
+        tools:ignore="TextSizeCheck">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/s6"
+            android:src="@drawable/attendant_list"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/s7"
+            android:textColor="@color/cream1"
+            android:textSize="23sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/blue1"
+        android:layout_alignStart="@id/dummy1"
+        android:layout_above="@id/removeClass"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="10dp"
+        android:clickable="true"
+        android:onClick="viewClicked">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/s10"
+            android:src="@drawable/view"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/s10"
+            android:textSize="23sp"
+            android:textColor="@color/cream1" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/addClass"
+        android:backgroundTint="@color/blue1"
+        android:layout_alignEnd="@id/dummy1"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp"
+        android:clickable="true"
+        android:onClick="addClassClicked" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/s9"
+            android:src="@drawable/add_class"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/s9"
+            android:textSize="23sp"
+            android:textColor="@color/cream1" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:id="@+id/removeClass"
+        android:backgroundTint="@color/blue1"
+        android:layout_alignStart="@id/dummy1"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp"
+        android:clickable="true"
+        android:onClick="removeClassClicked" >
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/s18"
+            android:src="@drawable/remove_class"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:paddingHorizontal="10dp"
+            android:text="@string/s18"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:textColor="@color/cream1" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/addClass"
+        android:layout_alignEnd="@id/dummy1"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/blue1"
+        android:clickable="true"
+        android:onClick="addStudentClicked"
+        app:cardCornerRadius="10dp"
+        tools:ignore="TextSizeCheck">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/s8"
+            android:src="@drawable/add_student"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="@string/s8"
+            android:textColor="@color/cream1"
+            android:textSize="23sp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/blue1"
+        android:layout_alignStart="@id/dummy1"
+        android:layout_below="@id/removeClass"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="10dp"
+        android:clickable="true"
+        android:onClick="removeStudentClicked">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-20dp"
+            android:contentDescription="@string/s19"
+            android:src="@drawable/remove_student"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:paddingHorizontal="10dp"
+            android:text="@string/s19"
+            android:textSize="23sp"
+            android:textAlignment="center"
+            android:textColor="@color/cream1" />
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
